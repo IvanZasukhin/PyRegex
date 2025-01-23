@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Python - Библиотека регулярных выражений в картах</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Re:Python - Библиотека регулярных выражений в картах</h1>
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i> 
+            </button>
+        </div>
+    </header>
+
+    <main class="fullscreen-main">
+        <section class="intro">
+            <div class="container">
+                <p>Удобный и интерактивный справочник по регулярным выражениям в Python. Изучайте и используйте мощь "re" с нами!</p>
+                <div class="start-section">
+                    <a href="connecting.html" class="card connect-card">Подключение библиотеки "re"</a>
+                    <button class="start-button" onclick="scrollToCards()">Приступить к изучению</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards" id="cards-section">
+            <div class="container">
+                <div class="theme-select">
+                    <div class="theme-section">
+                        <a href="/theme.html?id=basic-functions">
+                            <h2 class="theme-title">Основные функции</h2>
+                          </a>
+                        <div id="basic-functions-example" class="example-card-container">
+                        </div>
+                    </div>
+
+                    <div class="theme-section">
+                        <a href="/theme.html?id=metacharacters">
+                            <h2 class="theme-title">Метасимволы</h2>
+                         </a>
+                        <div id="metacharacters-example" class="example-card-container">
+                        </div>
+                    </div>
+
+                    <div class="theme-section">
+                        <a href="/theme.html?id=flags">
+                            <h2 class="theme-title">Флаги</h2>
+                       </a>
+                        <div id="flags-example" class="example-card-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+       <footer>
+       <div class="container">
+        <p>&copy; 2024 Re:Python. Все права защищены.</p>
+       </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="data/cards.js"></script>
+</body>
+</html>

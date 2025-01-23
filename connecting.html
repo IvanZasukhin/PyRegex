@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Re:Python - Подключение библиотеки "re"</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Назад
+            </a>
+            <h1>Re:Python - Подключение библиотеки "re"</h1>
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="connecting-page">
+            <div class="container">
+                <div class="info-card">
+                    <h2>Импорт библиотеки "re"</h2>
+                    <div class="card-content">
+                        <p class="info-text">Библиотека "re" является встроенной в Python, поэтому вам не нужно устанавливать её дополнительно.</p>
+                        <div class="code-block">
+                            <pre><code>import re</code></pre>
+                        </div>
+                        <h3>Пример использования</h3>
+                        <p class="info-text">После импорта вы можете сразу начинать использовать функции "re":</p>
+                        <div class="code-block">
+                            <pre><code>import re
+text = "Hello, world!"
+pattern = "world"
+result = re.search(pattern, text)
+if result:
+    print("Найдено:", result.group(0))</code></pre>
+                        </div>
+                    </div>
+                    <a href="index.html" class="back-button">
+                        <i class="fas fa-arrow-left"></i> Вернуться на главную
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Re:Python. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
