@@ -228,9 +228,6 @@ body.dark-theme #theme-toggle {
     background: rgba(0, 0, 0, 0.1);
 }
 
-.connecting-page {
-    text-align: center;
-}
 
 .connecting-page .container {
     display: flex;
