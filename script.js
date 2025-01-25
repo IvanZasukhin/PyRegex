@@ -1,10 +1,23 @@
+document.addEventListener('DOMContentLoaded', function() {
+    setupThemeToggle();
+    
+    if (document.getElementById('cards-section')) {
+        loadExampleCards();
+    }
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const themeId = urlParams.get('id');
+    if (themeId && document.getElementById('card-container')) {
+        loadThemeCards(themeId);
+    }
+});
+
 function scrollToCards() {
     const cardsSection = document.getElementById('cards-section');
     if (cardsSection) {
         cardsSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
-
 
 window.scrollToCards = scrollToCards;
 
@@ -45,19 +58,6 @@ function setupThemeToggle() {
     themeToggle.addEventListener('click', toggleTheme);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    setupThemeToggle();
-    
-    if (document.getElementById('cards-section')) {
-        loadExampleCards();
-    }
-    
-    const urlParams = new URLSearchParams(window.location.search);
-    const themeId = urlParams.get('id');
-    if (themeId && document.getElementById('card-container')) {
-        loadThemeCards(themeId);
-    }
-});
 async function loadExampleCards() {
     try {
         const containers = {
@@ -83,7 +83,7 @@ async function loadExampleCards() {
                             <pre><code>${cardData.code}</code></pre>
                         </div>
                     </div>
-                    <p class="click-hint">Нажмите, чтобы увидеть все примеры</p>
+                    <p class="click-hint" style="text-align: center; font-size: 24px; color: rgb(102, 102, 102); margin-top: 5px;">Нажмите, чтобы увидеть все примеры</p>
                 `;
 
                 container.appendChild(card);
