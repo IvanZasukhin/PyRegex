@@ -502,6 +502,7 @@ body.dark-theme h3 {
 
     .container {
         padding: 0;
+        flex-wrap: wrap;
     }
 
     .fullscreen-main{
